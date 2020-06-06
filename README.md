@@ -1,1 +1,1 @@
-# password-rules-swift
+# PasswordRules
