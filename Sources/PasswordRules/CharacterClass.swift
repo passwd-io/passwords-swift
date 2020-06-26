@@ -5,7 +5,7 @@ public enum CharacterClass: Hashable {
 
 extension CharacterClass {
 
-    public enum Named: String, Hashable {
+    public enum Named: String, Hashable, CaseIterable {
 
         /// `A-Z`
         case upper
