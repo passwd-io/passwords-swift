@@ -14,6 +14,21 @@ public struct PasswordRules: Hashable {
 
     internal init() {
     }
+
+    internal enum RuleName: String, Hashable, CaseIterable, LosslessStringConvertible {
+        case allowed
+        case required
+        case minLength = "minlength"
+        case maxLength = "maxlength"
+        case maxConsecutive = "max-consecutive"
+
+        var description: String { rawValue }
+
+        init?(_ description: String) {
+            self.init(rawValue: description)
+        }
+    }
+
 }
 
 //MARK:- LosslessStringConvertible
