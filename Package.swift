@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "password-swift",
+    name: "passwords-swift",
     products: [
         .library(
             name: "PasswordRules",
